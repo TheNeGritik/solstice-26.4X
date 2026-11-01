@@ -57,18 +57,18 @@ public:
 	DEFINE_SIG(EnchantUtils_getEnchantLevel, "56 57 53 48 81 EC ? ? ? ? 89 CB 48 8B 4A ? 31 F6", SigType::Sig, 0); // 1.26.51
 	DEFINE_SIG(GameMode_getDestroyRate, "56 57 48 83 EC ? 0F 29 74 24 ? 48 89 CE 48 8B 49 ? E8 ? ? ? ? 0F 28 F0", SigType::Sig, 0); // 26.51
 	DEFINE_SIG(HoverTextRenderer_render, "55 41 57 41 56 56 57 53 48 81 EC 78 01 00 00 48 8D AC 24 ? ? ? ? 44 0F 29 85 ? ? ? ? 0F 29 BD ? ? ? ? 0F 29 B5 ? ? ? ? 48 C7 85 ? ? ? ? FE FF FF FF 48 83 79 ? 00", SigType::Sig, 0); // 1.21.51
-	DEFINE_SIG(GameMode_baseUseItem, "55 41 57 41 56 41 55 41 54 56 57 53 48 81 EC C8 00 00 00 48 8D AC 24 ? ? ? ? 48 C7 45 ? ? ? ? ? 4D 89 C6 48 89 D7", SigType::Sig, 0); // 1.26.45
+	DEFINE_SIG(GameMode_baseUseItem, "55 41 57 41 56 41 55 41 54 56 57 53 48 81 EC C8 00 00 00 48 8D AC 24 ? ? ? ? 48 C7 45 ? ? ? ? ? 4D 89 C6 48 89 D7", SigType::Sig, 0); // 1.26.4X
 	DEFINE_SIG(GuiData_displayClientMessage, "55 56 53 48 81 EC ? ? ? ? 48 8D AC 24 ? ? ? ? 48 C7 85 ? ? ? ? ? ? ? ? 44 88 CB", SigType::Sig, 0); // 21.51 need check
 	DEFINE_SIG(InventoryTransaction_addAction, "55 41 57 41 56 41 54 56 57 53 48 81 EC ? ? ? ? 48 8D AC 24 ? ? ? ? 48 C7 85 ? ? ? ? ? ? ? ? 48 89 D7 48 89 CE ? ? 41 89 C7", SigType::Sig, 0);
-	DEFINE_SIG(ItemStack_vTable, "48 8D 05 ? ? ? ? 48 89 01 48 8D 41 ? 48 89 45 ? 0F 57 C0 0F 11 41 ? 0F 11 41 ? 66 C7 41 ? ? ? C6 41 ? ? 48 8D 41 ? 48 89 45 ? 48 8D 41 ? 48 89 45 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 48 C7 41 ? ? ? ? ? C6 45 ? ? 48 8D 55 ? 48 89 4D ? E8 ? ? ? ? 48 8D 0D ? ? ? ? 48 8B 45 ? 48 89 08 48 83 C4 70", SigType::RefSig, 3); // 1.26.45
+	DEFINE_SIG(ItemStack_vTable, "48 8D 05 ? ? ? ? 48 89 01 48 8D 41 ? 48 89 45 ? 0F 57 C0 0F 11 41 ? 0F 11 41 ? 66 C7 41 ? ? ? C6 41 ? ? 48 8D 41 ? 48 89 45 ? 48 8D 41 ? 48 89 45 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 0F 11 41 ? 48 C7 41 ? ? ? ? ? C6 45 ? ? 48 8D 55 ? 48 89 4D ? E8 ? ? ? ? 48 8D 0D ? ? ? ? 48 8B 45 ? 48 89 08 48 83 C4 70", SigType::RefSig, 3); // 1.26.4X
 	DEFINE_SIG(ItemStack_getCustomName, "56 57 48 83 EC 28 48 89 D6 48 8B 41 ? 48 85 C0 74 ? 48 89 CF", SigType::Sig, 0); // 1.26.0
 	DEFINE_SIG(ItemUseInventoryTransaction_vtable, "48 89 85 ? ? ? ? 8B 45 ? 89 85 ? ? ? ? C6 85 ? ? ? ? ? 0F B6 45", SigType::RefSig, 3);
-	DEFINE_SIG(ItemUseOnActorInventoryTransaction_vtable, "48 8D 05 ? ? ? ? 48 89 01 48 8D 05 ? ? ? ? 48 89 41 ? 48 8B 81 ? ? ? ? 48 83 F8 10 72 ? 48 8B 8E ? ? ? ? 48 8D 50 ? 48 81 FA 00 10 00 00 72 ? 4C 8B 41 ? 48 83 C1 F8 4C 29 C1 48 83 F9 20 0F 83 ? ? ? ? 48 83 C0 28 48 89 C2 4C 89 C1 E8 ? ? ? ? 48 C7 86 ? ? ? ? ? ? ? ? 48 C7 86 ? ? ? ? ? ? ? ? C6 86 ? ? ? ? ? 0F B6 86 ? ? ? ? FE C8 3C 01 77 ? 48 8D 8E ? ? ? ? 48 8B 86 ? ? ? ? 48 8B 00 31 D2 FF 15 ? ? ? ? 48 8D 05 ? ? ? ? 48 89 46 ? 48 8B 8E", SigType::RefSig, 3); // 1.26.45
+	DEFINE_SIG(ItemUseOnActorInventoryTransaction_vtable, "48 8D 05 ? ? ? ? 48 89 01 48 8D 05 ? ? ? ? 48 89 41 ? 48 8B 81 ? ? ? ? 48 83 F8 10 72 ? 48 8B 8E ? ? ? ? 48 8D 50 ? 48 81 FA 00 10 00 00 72 ? 4C 8B 41 ? 48 83 C1 F8 4C 29 C1 48 83 F9 20 0F 83 ? ? ? ? 48 83 C0 28 48 89 C2 4C 89 C1 E8 ? ? ? ? 48 C7 86 ? ? ? ? ? ? ? ? 48 C7 86 ? ? ? ? ? ? ? ? C6 86 ? ? ? ? ? 0F B6 86 ? ? ? ? FE C8 3C 01 77 ? 48 8D 8E ? ? ? ? 48 8B 86 ? ? ? ? 48 8B 00 31 D2 FF 15 ? ? ? ? 48 8D 05 ? ? ? ? 48 89 46 ? 48 8B 8E", SigType::RefSig, 3); // 1.26.4X
 	DEFINE_SIG(ItemReleaseInventoryTransaction_vtable, "48 8D 05 ? ? ? ? 48 89 41 ? C6 81 ? ? ? ? 00 C7 81 ? ? ? ? 00 00 00 00 C6 81 ? ? ? ? 00 C7 81 ? ? ? ? 00 00 00 00 0F 11 81 ? ? ? ? 48 C7 81 ? ? ? ? 00 00 00 00 48 C7 81 ? ? ? ? 0F 00 00 00 48 C7 81 ? ? ? ? 00 00 00 00 C7 81 ? ? ? ? 00 00 00 00 48 89 8D", SigType::RefSig, 3); // 26.51 need check
 	//DEFINE_SIG(Keyboard_feed, "E8 ? ? ? ? E9 ? ? ? ? 41 0F ? ? ? 45 0F ? ? ? 45 0F", SigType::RefSig, 1);
 	//DEFINE_SIG(MainView_instance, "48 8B 05 ? ? ? ? C6 40 ? ? 0F 95 C0", SigType::RefSig, 3);
 	DEFINE_SIG(MinecraftGame_instance, "48 89 15 ? ? ? ? 49 8B 40", SigType::RefSig, 3);
-	DEFINE_SIG(MinecraftPackets_createPacket, "56 48 83 EC 20 48 89 CE 81 FA 5F 01 00 00", SigType::Sig, 0); // 1.26.45
+	DEFINE_SIG(MinecraftPackets_createPacket, "56 48 83 EC 20 48 89 CE 81 FA 5F 01 00 00", SigType::Sig, 0); // 1.26.4X
 	//hate ms
 	//DEFINE_SIG(Mob_getJumpControlComponent, "E8 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? ? ? ? E9 ? ? ? ? F3 0F 10 43", SigType::RefSig, 1); //iguess
 	DEFINE_SIG(Mob_JumpFromGroundRequestComponentPatch, "C7 46 ? ? ? ? ? 48 83 C4 ? 5F 5E C3 41 57", SigType::Sig, 0); // guess name :joy:
@@ -95,7 +95,7 @@ public:
 	DEFINE_SIG(glm_rotateRef, "E8 ? ? ? ? 0F 28 ? ? ? ? ? 48 8B ? C6 40 38", SigType::Sig, 0);
 	DEFINE_SIG(glm_translateRef, "E8 ? ? ? ? E9 ? ? ? ? 40 84 ? 0F 84 ? ? ? ? 83 FF", SigType::Sig, 0);
 	DEFINE_SIG(glm_translateRef2, "E8 ? ? ? ? C6 46 ? ? F3 0F 11 74 24 ? F3 0F 10 1D", SigType::Sig, 0);*/
-	DEFINE_SIG(BlockSource_fireBlockChanged, "41 57 41 56 41 55 41 54 56 57 55 53 48 83 EC ? 48 8B 81 ? ? ? ? 48 39 81 ? ? ? ? 0F 84 ? ? ? ? 48 89 CE", SigType::Sig, 0); // 1.26.45
+	DEFINE_SIG(BlockSource_fireBlockChanged, "41 57 41 56 41 55 41 54 56 57 55 53 48 83 EC ? 48 8B 81 ? ? ? ? 48 39 81 ? ? ? ? 0F 84 ? ? ? ? 48 89 CE", SigType::Sig, 0); // 1.26.4X
 	DEFINE_SIG(ActorAnimationControllerPlayer_applyToPose, "55 41 57 41 56 41 55 41 54 56 57 53 48 81 EC ? ? ? ? 48 8D AC 24 ? ? ? ? 44 0F 29 9D ? ? ? ? 44 0F 29 95 ? ? ? ? 44 0F 29 8D ? ? ? ? 44 0F 29 85 ? ? ? ? 0F 29 BD ? ? ? ? 0F 29 B5 ? ? ? ? 48 C7 85 ? ? ? ? ? ? ? ? 4D 89 CD", SigType::Sig, 0); // 1.21.80
 	DEFINE_SIG(JSON_parse, "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 56 48 83 EC ? 48 83 7A", SigType::Sig, 0);
 	// who using this
