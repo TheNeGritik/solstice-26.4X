@@ -1,2 +1,2 @@
-solstice 26.45 src by negritik and loury
+solstice 26.4X src by negritik and loury
 
