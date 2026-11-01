@@ -107,7 +107,7 @@ void Solstice::init(HMODULE hModule)
 #endif
 );
 
-    spdlog::info("Target version: 1.26.45 | Detected Minecraft version: {}", ProcUtils::getVersion());
+    spdlog::info("Target version: 1.26.4X | Detected Minecraft version: {}", ProcUtils::getVersion());
 
     ExceptionHandler::init();
 
@@ -186,16 +186,16 @@ void Solstice::init(HMODULE hModule)
             if (result == 0) failedList += " - [Offset] " + sig + "\n";
         }
 
-        std::string report = "Failed to resolve " + std::to_string(failedSigs) + " signatures/offsets for Minecraft 1.26.45:\n" + failedList;
+        std::string report = "Failed to resolve " + std::to_string(failedSigs) + " signatures/offsets for Minecraft 1.26.4X:\n" + failedList;
         console->critical("{}", report);
         ExceptionHandler::makeCrashLog(report, 0xDEAD0001);
 
         std::string userMsg = "Solstice Initialization Failed!\n\n"
-                              "The following " + std::to_string(failedSigs) + " signature(s)/offset(s) could not be found for Minecraft 1.26.45:\n"
+                              "The following " + std::to_string(failedSigs) + " signature(s)/offset(s) could not be found for Minecraft 1.26.4X:\n"
                               + failedList + "\nSolstice cannot start safely with missing signatures.\n"
                               "A diagnostic log has been written to solstice\\crash.log.";
 
-        MessageBoxA(Solstice::GameWindow ? Solstice::GameWindow : nullptr, userMsg.c_str(), "Solstice 1.26.45 - Initialization Failed", MB_OK | MB_ICONERROR);
+        MessageBoxA(Solstice::GameWindow ? Solstice::GameWindow : nullptr, userMsg.c_str(), "Solstice 1.26.4X - Initialization Failed", MB_OK | MB_ICONERROR);
 
         SigManager::deinitialize();
         OffsetProvider::deinitialize();
