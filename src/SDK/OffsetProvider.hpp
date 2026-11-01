@@ -147,7 +147,7 @@ public:
 	DEFINE_FIELD(BlockSource_mBuildHeight, (uint8_t)0x38); // 1.21.131
 
 	DEFINE_FIELD(bgfx_d3d12_RendererContextD3D12_m_commandQueue, 0xcc9260)
-	DEFINE_FIELD(bgfx_context_m_renderCtx, 0x0C6E3250); // 1.26.45
+	DEFINE_FIELD(bgfx_context_m_renderCtx, 0x0C6E3250); // 1.26.4X
 
 	DEFINE_FIELD(MinecraftGame_mClientInstances, 0x970); // 1.26.51 
 	DEFINE_FIELD(MinecraftGame_mMouseGrabbed, 0x1E8); // +8? need debug
@@ -163,20 +163,20 @@ public:
 	DEFINE_FIELD(GameSession_mEventCallback, (uint8_t)0x50);
 	DEFINE_FIELD(UIProfanityContext_mEnabled, 0x1A); // 1.21.131 //very unknown i dont want to get uwp :joy:
 
-	DEFINE_FIELD(ClientInstance_getLocalPlayer, 31); // 1.26.45
-	DEFINE_FIELD(ClientInstance_getBlockSource, 30); // 1.26.45
+	DEFINE_FIELD(ClientInstance_getLocalPlayer, 31); // 1.26.4X
+	DEFINE_FIELD(ClientInstance_getBlockSource, 30); // 1.26.4X
 	DEFINE_FIELD(ClientInstance_setDisableInput, 308);
 	DEFINE_FIELD(ClientInstance_getOptions, 174); // 1.26.51
 	DEFINE_FIELD(ClientInstance_grabMouse, 310); // 1.26.0
 	DEFINE_FIELD(ClientInstance_releaseMouse, 311); // 1.26.0
 	DEFINE_FIELD(ClientInstance_getScreenName, 246); // 1.26.0
 	DEFINE_FIELD(ClientInstance_playUi, 320); // 1.26.0
-	DEFINE_FIELD(ClientInstance_mMinecraftSim, 0x1A8); // 1.26.45
-	DEFINE_FIELD(ClientInstance_getLevelRenderer, 186); // 1.26.45
+	DEFINE_FIELD(ClientInstance_mMinecraftSim, 0x1A8); // 1.26.4X
+	DEFINE_FIELD(ClientInstance_getLevelRenderer, 186); // 1.26.4X
 	DEFINE_FIELD(ClientInstance_getInputHandler, 303);
-	DEFINE_FIELD(ClientInstance_mPacketSender, 0x1C8); // 1.26.45
-	DEFINE_FIELD(ClientInstance_mGuiData, 0x648); // 1.26.45
-	DEFINE_FIELD(ClientInstance_mViewMatrix, 0x418); // 1.26.45
+	DEFINE_FIELD(ClientInstance_mPacketSender, 0x1C8); // 1.26.4X
+	DEFINE_FIELD(ClientInstance_mGuiData, 0x648); // 1.26.4X
+	DEFINE_FIELD(ClientInstance_mViewMatrix, 0x418); // 1.26.4X
 	DEFINE_FIELD(ClientInstance_mFovX, 0x740); // 1.21.80
 	DEFINE_FIELD(ClientInstance_mFovY, 0x754); // 1.21.80
 
@@ -206,8 +206,8 @@ public:
 
 	DEFINE_FIELD(LevelRendererPlayer_mFovX, 0xF58); 
 	DEFINE_FIELD(LevelRendererPlayer_mFovY, 0xF6C);
-	DEFINE_FIELD(LevelRendererPlayer_mCameraPos, 0x660); // 1.26.45: Camera eye position
-	DEFINE_FIELD(LevelRendererPlayer_mViewMatrix, 0xF18); // 1.26.45: View matrix (0xF18)
+	DEFINE_FIELD(LevelRendererPlayer_mCameraPos, 0x660); // 1.26.4X: Camera eye position
+	DEFINE_FIELD(LevelRendererPlayer_mViewMatrix, 0xF18); // 1.26.4X: View matrix (0xF18)
 	DEFINE_FIELD(LevelRenderer_mRendererPlayer, 0x468);
 
 	static void initialize();
